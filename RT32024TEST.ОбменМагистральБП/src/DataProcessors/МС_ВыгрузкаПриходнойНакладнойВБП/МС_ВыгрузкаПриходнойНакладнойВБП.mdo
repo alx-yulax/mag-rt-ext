@@ -12,10 +12,10 @@
   <useStandardCommands>true</useStandardCommands>
   <defaultForm>DataProcessor.МС_ВыгрузкаПриходнойНакладнойВБП.Form.Форма</defaultForm>
   <attributes uuid="b979817b-0612-4126-85ff-faf4d63f0119">
-    <name>СсылкаНаДокумент</name>
+    <name>Ссылка</name>
     <synonym>
       <key>ru</key>
-      <value>Ссылка на документ</value>
+      <value>Ссылка</value>
     </synonym>
     <type>
       <types>DocumentRef.ПриходнаяНакладная</types>

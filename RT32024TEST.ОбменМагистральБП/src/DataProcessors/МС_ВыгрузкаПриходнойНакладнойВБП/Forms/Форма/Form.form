@@ -9,7 +9,7 @@
       <common>true</common>
     </userVisible>
     <dataPath xsi:type="form:DataPath">
-      <segments>Объект.СсылкаНаДокумент</segments>
+      <segments>Объект.Ссылка</segments>
     </dataPath>
     <extendedTooltip>
       <name>СсылкаРасширеннаяПодсказка</name>
@@ -314,13 +314,15 @@
     </extendedTooltip>
     <type>UsualButton</type>
     <commandName>Form.Command.Отправить</commandName>
-    <buttonImportance>Normal</buttonImportance>
     <representation>Auto</representation>
+    <defaultButton>true</defaultButton>
     <autoMaxWidth>true</autoMaxWidth>
     <autoMaxHeight>true</autoMaxHeight>
     <placementArea>UserCmds</placementArea>
     <representationInContextMenu>Auto</representationInContextMenu>
   </items>
+  <commandBarLocation>None</commandBarLocation>
+  <showCommandBar>false</showCommandBar>
   <autoCommandBar>
     <name>ФормаКоманднаяПанель</name>
     <id>-1</id>
@@ -376,6 +378,12 @@
     <currentRowUse>Auto</currentRowUse>
     <selectedRowsUse>Auto</selectedRowsUse>
   </formCommands>
+  <parameters>
+    <name>Ссылка</name>
+    <valueType>
+      <types>DocumentRef.ПриходнаяНакладная</types>
+    </valueType>
+  </parameters>
   <commandInterface>
     <navigationPanel/>
     <commandBar/>

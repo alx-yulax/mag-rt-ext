@@ -62,7 +62,6 @@
   <roles>Role.МС_ОсновнаяРоль</roles>
   <roles>Role.МС_АдминистраторОбменаБП</roles>
   <commonModules>CommonModule.МС_ОбщийМодульПоиска</commonModules>
-  <xDTOPackages>XDTOPackage.МС_ПакетXDTO1</xDTOPackages>
   <definedTypes>DefinedType.Объем</definedTypes>
   <definedTypes>DefinedType.Вес</definedTypes>
   <definedTypes>DefinedType.GTIN</definedTypes>

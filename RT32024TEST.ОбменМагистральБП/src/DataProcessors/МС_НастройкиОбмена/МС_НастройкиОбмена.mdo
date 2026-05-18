@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9fd26b17-3ce2-4ef3-8c4b-a9fff39bf6cc">
+  <producedTypes>
+    <objectType typeId="3ae12f28-4c65-49b2-bc49-aa891f7aa871" valueTypeId="828648e6-d603-4b3a-9130-649cbe8512c6"/>
+    <managerType typeId="8aaf3eef-31a7-45f1-9732-bc03b88e504e" valueTypeId="fc909086-2b06-458d-abba-a91127406dd0"/>
+  </producedTypes>
+  <name>МС_НастройкиОбмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки обмена (Магистраль-Старкам)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.МС_НастройкиОбмена.Form.МС_НастройкиОбменаБП</defaultForm>
+  <forms uuid="bb64d7ca-bf0d-44c9-81c0-befd32adfed8">
+    <name>МС_НастройкиОбменаБП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки обмена с БП</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

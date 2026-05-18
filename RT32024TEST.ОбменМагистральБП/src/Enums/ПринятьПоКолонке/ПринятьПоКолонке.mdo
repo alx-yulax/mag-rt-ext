@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="666493ca-fd1a-4973-b8cd-7999d9b60e3b" extendedConfigurationObject="d45077fb-8e43-4183-8b48-2b5e261b471c">
+  <producedTypes>
+    <refType typeId="81b88cb4-3d3f-45c8-8ad7-44ea0228d128" valueTypeId="6fe67cdf-a074-4f4f-83fc-5928b65217c1"/>
+    <listType typeId="db621b07-8dd7-432a-8297-60d67136bfa2" valueTypeId="3d1f9b12-3340-41a0-9c34-3136494da4f2"/>
+    <managerType typeId="7be80cbc-d90c-40e4-8cbd-4b8d3fcfc1b1" valueTypeId="896f65e9-fde2-4348-9f43-a5c99363414e"/>
+  </producedTypes>
+  <name>ПринятьПоКолонке</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:EnumExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <enumValues uuid="9f20fbdb-47b7-40af-9fb5-c4db7b094c91" extendedConfigurationObject="044edb90-9917-4977-82cd-eb9b2ebb64d7">
+    <name>КоличествоПоФакту</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+  <enumValues uuid="3ec76674-48ed-4d49-a721-000015ebe1e1" extendedConfigurationObject="142df335-e548-4a9e-85ec-591213bedeea">
+    <name>КоличествоПоВходящемуДокументу</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+</mdclass:Enum>

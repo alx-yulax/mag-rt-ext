@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="b394de20-c7fd-40e5-af1a-41424743ec37" extendedConfigurationObject="13f6f75e-ef1a-4499-be4d-09d78e2d76df">
+  <producedTypes>
+    <refType typeId="c50f8cf5-f2dc-499a-a49b-75ada357ab72" valueTypeId="60668062-1093-4f68-aa4a-bf76a10a3d12"/>
+    <listType typeId="e05f9ee8-5534-49ac-8fb7-b29c59085b4f" valueTypeId="d68a9a76-e72f-4d87-97da-985e0769c485"/>
+    <managerType typeId="8515a0fd-9e1c-4928-ae41-fd3fedd34d8e" valueTypeId="94e96cc5-6823-47d7-a5d3-6217c3d401a0"/>
+  </producedTypes>
+  <name>МетодОценкиЗапасов</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:EnumExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+</mdclass:Enum>

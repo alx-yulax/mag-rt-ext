@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8f8d8d39-00b5-4bdc-a86f-8c41a3fa3357">
+  <producedTypes>
+    <managerType typeId="0a1b2c3d-4e5f-4a6b-8c9d-1e2f3a4b5c6d" valueTypeId="6d5c4b3a-2f1e-9d8c-7b6a-5f4e3d2c1b0a"/>
+    <valueManagerType typeId="11223344-5566-4777-8899-aabbccddeeff" valueTypeId="ffeeddcc-bbaa-4998-8776-665544332211"/>
+    <valueKeyType typeId="9f0e1d2c-3b4a-4c5d-8e7f-6a5b4c3d2e1f" valueTypeId="1f2e3d4c-5b6a-4f7e-8d9c-0b1a2c3d4e5f"/>
+  </producedTypes>
+  <name>МС_ПортБП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Порт БП для обмена</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>5</precision>
+    </numberQualifiers>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

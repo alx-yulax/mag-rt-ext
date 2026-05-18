@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2b7476a5-714d-4338-a0a1-c893281acee7">
+  <producedTypes>
+    <objectType typeId="dd509129-f7ba-4441-9d1c-c72d177b6fba" valueTypeId="0308e181-4599-4080-b863-7fdc1dfc48a3"/>
+    <refType typeId="ee58d6c3-5ed7-4ffb-85eb-19f7daeb4816" valueTypeId="ff838052-80f1-4aa2-bbcc-5c37a81373d0"/>
+    <selectionType typeId="6dedb749-91b7-44c0-8b92-0427405275f5" valueTypeId="0fd82489-55bb-45a0-9324-bf3c10f11dc7"/>
+    <listType typeId="bb6d54d3-1e9c-4d35-bbac-e4f5d371d6c2" valueTypeId="94364233-792b-4c1c-ada5-2afbdd9c4def"/>
+    <managerType typeId="749467d8-5ef8-4f23-9789-fe608113067a" valueTypeId="cf5e1c68-f923-44ff-b34b-30241f8392ac"/>
+  </producedTypes>
+  <name>МС_НоменклатураБП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Номенклатура БП</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.МС_НоменклатураБП.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.МС_НоменклатураБП.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>11</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.МС_НоменклатураБП.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.МС_НоменклатураБП.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="a0d2fd1e-d61a-492a-af01-a720c75a41cc">
+    <name>СсылкаВДругойИБ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка в другой ИБ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <indexing>Index</indexing>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="b22c3248-e85d-4068-aac8-122eba205d78">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9f671b0c-3966-4d2e-ba06-13f5d5ff888f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

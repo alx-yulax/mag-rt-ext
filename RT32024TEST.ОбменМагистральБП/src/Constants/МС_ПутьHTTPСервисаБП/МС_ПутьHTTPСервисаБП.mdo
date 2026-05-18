@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a1b60d7e-643b-4c83-a10a-bd2c5b8f9c82">
+  <producedTypes>
+    <managerType typeId="2f8a1c9e-3c54-4c2a-9b66-2e1f0d9c8b7a" valueTypeId="7a8b9c0d-1e2f-4b3c-8d9e-0f1a2b3c4d5e"/>
+    <valueManagerType typeId="4c3b2a19-0f1e-4d5c-8b7a-6c5d4e3f2a1b" valueTypeId="8e7f6a5b-4c3d-4e2f-9a1b-2c3d4e5f6071"/>
+    <valueKeyType typeId="0c1d2e3f-4a5b-4c6d-8e9f-1a2b3c4d5e6f" valueTypeId="6f5e4d3c-2b1a-4f9e-8d6c-5b4a3f2e1d0c"/>
+  </producedTypes>
+  <name>МС_ПутьHTTPСервисаБП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Путь HTTP-сервиса БП</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>255</length>
+    </stringQualifiers>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

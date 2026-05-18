@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1173764f-59a4-4958-8605-69eb9c97d09b">
+  <producedTypes>
+    <objectType typeId="df246c9a-d3ad-4e02-af4e-a76d0c426501" valueTypeId="ceea5b80-e128-4f49-aa6f-1d68c8da22bc"/>
+    <managerType typeId="85571bf4-16c8-4ac2-8e9b-b5f310bc3a9a" valueTypeId="be12d2bf-4b84-401b-a6a0-c78c6570ab1d"/>
+  </producedTypes>
+  <name>МС_ВыгрузкаПриходнойНакладнойВБП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгрузка приходной накладной в БП</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.МС_ВыгрузкаПриходнойНакладнойВБП.Form.Форма</defaultForm>
+  <attributes uuid="b979817b-0612-4126-85ff-faf4d63f0119">
+    <name>СсылкаНаДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка на документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ПриходнаяНакладная</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="5bee55c2-cc6b-4c9b-8f40-5748cc05d6f6">
+    <producedTypes>
+      <objectType typeId="09996e70-ef78-4274-b246-e37a40acbcbe" valueTypeId="121c291e-f1a8-4f14-b691-99d4e7a76571"/>
+      <rowType typeId="22dbf20a-6c84-44d2-b9b6-ead532ecb72a" valueTypeId="0e015f35-b32b-44b8-9445-667fb631eae2"/>
+    </producedTypes>
+    <name>ТабличнаяЧастьЗапасы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запасы</value>
+    </synonym>
+    <attributes uuid="1c99ef1f-7de6-454d-8c1a-1cff6ab0f9b6">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="1328597f-c572-473b-87ad-18446bf3ab9a">
+      <name>НоменклатураБП</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура БП</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.МС_НоменклатураБП</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="1755bbf1-fe0a-4292-bebe-40226ea0ef21">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

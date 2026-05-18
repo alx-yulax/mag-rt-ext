@@ -1,0 +1,110 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.yulax.ru">
+	<valueType name="ТипСумма" base="xs:decimal" totalDigits="15" fractionDigits="2"/>
+	<valueType name="ТипКоличество" base="xs:decimal" totalDigits="15" fractionDigits="3"/>
+	<valueType name="ТипНомерСтроки" base="xs:int" totalDigits="10"/>
+	<valueType name="ТипСсылкаВнешняяНавигационная" base="xs:string"/>
+	<valueType name="ДокументСсылка.ПоступлениеТоваровУслуг"/>
+	<valueType name="ТипНомерДокумента" base="xs:string" maxLength="256"/>
+	<valueType name="СправочникСсылка.Организации"/>
+	<valueType name="СправочникСсылка.Контрагенты"/>
+	<valueType name="ЮридическоеФизическоеЛицо" base="xs:string" variety="Atomic">
+		<enumeration>ЮридическоеЛицо</enumeration>
+		<enumeration>ФизическоеЛицо</enumeration>
+	</valueType>
+	<valueType name="СправочникСсылка.Номенклатура"/>
+	<valueType name="СправочникСсылка.ЕдиницыИзмерения"/>
+	<valueType name="СправочникСсылка.НоменклатураГруппа"/>
+	<objectType name="Документ.ПоступлениеТоваровУслуг" open="true" sequenced="true">
+		<property xmlns:d3p1="http://www.yulax.ru" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваПоступлениеТоваровУслуг"/>
+		<property xmlns:d3p1="http://www.yulax.ru" name="Товары" type="d3p1:Документ.ПоступлениеТоваровУслуг.Товары" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.yulax.ru" name="Сумма" type="d3p1:ТипСумма" lowerBound="0"/>
+		<property name="СуммаВключаетНДС" type="xs:boolean" lowerBound="0"/>
+	</objectType>
+	<objectType name="Документ.ПоступлениеТоваровУслуг.Товары">
+		<property xmlns:d3p1="http://www.yulax.ru" name="Строка" type="d3p1:Документ.ПоступлениеТоваровУслуг.Товары.Строка" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Документ.ПоступлениеТоваровУслуг.Товары.Строка" open="true" sequenced="true">
+		<property xmlns:d3p1="http://www.yulax.ru" name="НомерСтрокиДокумента" type="d3p1:ТипНомерСтроки" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.yulax.ru" name="ДанныеНоменклатуры" type="d3p1:ОбщиеСвойстваДанныеНоменклатуры"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.22" name="ЕдиницаИзмерения" type="d3p1:КлючевыеСвойстваЕдиницаИзмерения"/>
+		<property xmlns:d3p1="http://www.yulax.ru" name="Количество" type="d3p1:ТипКоличество"/>
+		<property xmlns:d3p1="http://www.yulax.ru" name="Цена" type="d3p1:ТипСумма" lowerBound="0" nillable="false"/>
+		<property xmlns:d3p1="http://www.yulax.ru" name="Сумма" type="d3p1:ТипСумма" lowerBound="0" nillable="false"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваПоступлениеТоваровУслуг" open="true" sequenced="true">
+		<property xmlns:d3p1="http://www.yulax.ru" name="СсылкаВнешняяНавигационная" type="d3p1:ТипСсылкаВнешняяНавигационная" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.yulax.ru" name="Ссылка" type="d3p1:ДокументСсылка.ПоступлениеТоваровУслуг" lowerBound="0"/>
+		<property name="Дата" type="xs:dateTime"/>
+		<property xmlns:d3p1="http://www.yulax.ru" name="Номер" type="d3p1:ТипНомерДокумента"/>
+		<property xmlns:d3p1="http://www.yulax.ru" name="Организация" type="d3p1:КлючевыеСвойстваОрганизация"/>
+		<property xmlns:d3p1="http://www.yulax.ru" name="ДанныеВходящегоДокумента" type="d3p1:ОбщиеСвойстваДанныеВходящегоДокумента" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.yulax.ru" name="Контрагент" type="d3p1:КлючевыеСвойстваКонтрагент"/>
+	</objectType>
+	<objectType name="ОбщиеСвойстваДанныеВходящегоДокумента" open="true" sequenced="true">
+		<property xmlns:d3p1="http://www.yulax.ru" name="НомерВходящегоДокумента" type="d3p1:ТипНомерДокумента" lowerBound="0"/>
+		<property name="ДатаВходящегоДокумента" type="xs:date" lowerBound="0"/>
+		<property name="НаименованиеВходящегоДокумента" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваОрганизация" open="true" sequenced="true">
+		<property xmlns:d3p1="http://www.yulax.ru" name="СсылкаВнешняяНавигационная" type="d3p1:ТипСсылкаВнешняяНавигационная" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.yulax.ru" name="Ссылка" type="d3p1:СправочникСсылка.Организации" lowerBound="0"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="НаименованиеСокращенное" type="xs:string" lowerBound="0"/>
+		<property name="НаименованиеПолное" type="xs:string" lowerBound="0"/>
+		<property name="ИНН" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="12"/>
+		</property>
+		<property name="КПП" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="9"/>
+		</property>
+	</objectType>
+	<objectType name="КлючевыеСвойстваКонтрагент" open="true" sequenced="true">
+		<property xmlns:d3p1="http://www.yulax.ru" name="СсылкаВнешняяНавигационная" type="d3p1:ТипСсылкаВнешняяНавигационная" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.yulax.ru" name="Ссылка" type="d3p1:СправочникСсылка.Контрагенты" lowerBound="0"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="НаименованиеПолное" type="xs:string" lowerBound="0"/>
+		<property name="ИНН" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="12"/>
+		</property>
+		<property name="КПП" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="9"/>
+		</property>
+		<property xmlns:d3p1="http://www.yulax.ru" name="ЮридическоеФизическоеЛицо" type="d3p1:ЮридическоеФизическоеЛицо"/>
+		<property name="ИндивидуальныйПредприниматель" type="xs:boolean" lowerBound="0"/>
+		<property name="Самозанятый" type="xs:boolean" lowerBound="0"/>
+	</objectType>
+	<objectType name="ОбщиеСвойстваДанныеНоменклатуры" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.22" name="Номенклатура" type="d3p1:КлючевыеСвойстваНоменклатура"/>
+		<property name="Штрихкод" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="200"/>
+		</property>
+		<property name="SKU" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="9"/>
+		</property>
+	</objectType>
+	<objectType name="КлючевыеСвойстваНоменклатура" open="true" sequenced="true">
+		<property xmlns:d3p1="http://www.yulax.ru" name="СсылкаВнешняяНавигационная" type="d3p1:ТипСсылкаВнешняяНавигационная" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.yulax.ru" name="Ссылка" type="d3p1:СправочникСсылка.Номенклатура" lowerBound="0"/>
+		<property name="НаименованиеПолное" type="xs:string" lowerBound="0"/>
+		<property name="КодВПрограмме" type="xs:string" lowerBound="0"/>
+		<property name="Артикул" type="xs:string" lowerBound="0"/>
+		<property name="Наименование" type="xs:string"/>
+		<property xmlns:d3p1="http://www.yulax.ru" name="Группа" type="d3p1:КлючевыеСвойстваНоменклатураГруппа" lowerBound="0"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваЕдиницаИзмерения" open="true" sequenced="true">
+		<property xmlns:d3p1="http://www.yulax.ru" name="СсылкаВнешняяНавигационная" type="d3p1:ТипСсылкаВнешняяНавигационная" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.yulax.ru" name="Ссылка" type="d3p1:СправочникСсылка.ЕдиницыИзмерения" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.yulax.ru" name="ДанныеКлассификатора" type="d3p1:ОбщиеСвойстваДанныеКлассификатора" lowerBound="1"/>
+	</objectType>
+	<objectType name="ОбщиеСвойстваДанныеКлассификатора" open="true" sequenced="true">
+		<property name="Код" type="xs:string" lowerBound="0"/>
+		<property name="Наименование" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваНоменклатураГруппа" open="true" sequenced="true">
+		<property xmlns:d3p1="http://www.yulax.ru" name="СсылкаВнешняяНавигационная" type="d3p1:ТипСсылкаВнешняяНавигационная" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.yulax.ru" name="Ссылка" type="d3p1:СправочникСсылка.НоменклатураГруппа" lowerBound="0"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="КодВПрограмме" type="xs:string" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.yulax.ru" name="Группа" type="d3p1:КлючевыеСвойстваНоменклатураГруппа" lowerBound="0"/>
+	</objectType>
+</package>

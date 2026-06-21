@@ -3,9 +3,9 @@
   <name>МС_Обмен</name>
   <synonym>
     <key>ru</key>
-    <value>М с обмен</value>
+    <value>Обмен</value>
   </synonym>
-  <rootURL>yulax</rootURL>
+  <rootURL>yulax-exch</rootURL>
   <reuseSessions>AutoUse</reuseSessions>
   <sessionMaxAge>20</sessionMaxAge>
   <urlTemplates uuid="6723aa08-9c21-4f3b-b757-24d233094e83">

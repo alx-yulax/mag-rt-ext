@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d2dfd5f6-2d1f-49c2-90ad-7a0e3d2e2a66">
+  <producedTypes>
+    <managerType typeId="8b7a6c5d-4e3f-4a2b-9c0d-1e2f3a4b5c6d" valueTypeId="2c1b0a9f-8e7d-4c6b-5a4f-3e2d1c0b9a8f"/>
+    <valueManagerType typeId="0f1e2d3c-4b5a-4c6d-8e9f-1a2b3c4d5e6f" valueTypeId="6e5d4c3b-2a19-4f8e-9d7c-6b5a4e3d2c1b"/>
+    <valueKeyType typeId="7c6b5a4e-3d2c-4b1a-9f8e-7d6c5b4a3f2e" valueTypeId="e2f3a4b5-c6d7-4e8f-9a0b-1c2d3e4f5a6b"/>
+  </producedTypes>
+  <name>МС_ПарольБП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пароль БП для обмена</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>100</length>
+    </stringQualifiers>
+  </type>
+  <passwordMode>true</passwordMode>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

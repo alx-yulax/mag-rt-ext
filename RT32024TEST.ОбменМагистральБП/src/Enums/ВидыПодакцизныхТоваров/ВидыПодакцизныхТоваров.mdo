@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="fb8441b6-405a-464b-9387-05c36c0bd218" extendedConfigurationObject="ca9b5f96-e540-46b1-b1a5-af475502239a">
+  <producedTypes>
+    <refType typeId="a10dda0a-f460-4f97-9d24-b7a669927284" valueTypeId="7a991a26-00b2-4520-9fdd-b52ac6654349"/>
+    <listType typeId="042b6ee1-d993-4bd8-bd16-70456e8f1472" valueTypeId="86e222a8-fb40-466f-9ae6-2000ef5d6a35"/>
+    <managerType typeId="ca37ea41-49c4-4fbd-8a3d-854b6eac6abf" valueTypeId="97462c78-e604-440e-ab50-1e2f00cd3e57"/>
+  </producedTypes>
+  <name>ВидыПодакцизныхТоваров</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:EnumExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+</mdclass:Enum>

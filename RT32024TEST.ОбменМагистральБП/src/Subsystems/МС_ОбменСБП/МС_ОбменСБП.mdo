@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b3b7b3e7-4d2d-4d69-8b2b-1f5c4c1e9f3a">
+  <name>МС_ОбменСБП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен с БП СТАРКАМ</value>
+  </synonym>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>DataProcessor.МС_ВыгрузкаПриходнойНакладнойВБП</content>
+  <content>DataProcessor.МС_НастройкиОбмена</content>
+  <content>HTTPService.МС_Обмен</content>
+</mdclass:Subsystem>

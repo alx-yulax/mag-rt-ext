@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b2bffb9c-4c2f-4b4a-9f1d-4f95c2d2d3d0">
+  <producedTypes>
+    <managerType typeId="5a6b7c8d-9e0f-4a1b-8c2d-3e4f5a6b7c8d" valueTypeId="8d7c6b5a-4f3e-4d2c-9b1a-0f9e8d7c6b5a"/>
+    <valueManagerType typeId="2a1b0c9d-8e7f-4c6d-9e0f-1a2b3c4d5e6f" valueTypeId="f6e5d4c3-b2a1-4f0e-9d8c-7b6a5f4e3d2c"/>
+    <valueKeyType typeId="9a8b7c6d-5e4f-4a3b-8c2d-1e0f9a8b7c6d" valueTypeId="1c2d3e4f-5a6b-4c7d-8e9f-0a1b2c3d4e5f"/>
+  </producedTypes>
+  <name>МС_ТаймаутHTTPБП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Таймаут HTTP к БП (сек.)</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>3</precision>
+    </numberQualifiers>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>
